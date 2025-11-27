@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <marquee behavior="alternate" direction="left">
+            <div class="head">
+                <h1>The Odin Project - My Library</h1>
+            </div>
+        </marquee>
+    </header>
+      
+    <div id="div_card"></div> <br>
+
+    <div id="dial_div">
+        <dialog id="dialog">
+            <form>
+                <h1 class="Cbook">Create a new book</h1>
+                <label for="title">Title</label> <br>
+                <input type="text" id="title" class="inputSt" placeholder="Title" required> <br><br>
+                <label for="author">Author</label> <br>
+                <input type="text" id="author" class="inputSt" placeholder="Author" required> <br><br>
+                <label for="page">Page</label> <br>
+                <input type="number" id="page" class="inputSt" placeholder="Page" required> <br><br>
+                <input type="checkbox" id="readSt"><label> &nbsp; Have you read this book?</label>  <br><br>
+                
+                <button type="button" value="cancel" formmethod="dailog" id="closeBtn">Cancel</button>
+                <button type="submit" value="defualt" class="submit">Submit</button>
+            </form>
+        </dialog>
+        <button type="button" id="openBtn">Add New Book</button>
+    </div>
+    
+    <script src="library.js"></script>
+</body>
+</html>

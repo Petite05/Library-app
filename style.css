@@ -1,0 +1,126 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aliceblue;
+    margin: 5%;
+}
+
+header {
+    background-color: green;
+    padding: 5px;
+    color: white;
+    border-radius: 30px;
+
+    h1 {
+        padding: 10px;
+        font-style: italic;
+    }
+}
+
+.cards {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cards {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+.card {
+    border: 1px solid;
+    padding: 10px;
+    line-height: 1.8;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    color: blueviolet;
+    letter-spacing: 2px;
+}
+
+.cardID {
+    color: gray;
+}
+
+.read-toggle {
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+dialog {
+    position: absolute;
+    justify-self: center;
+    left: 5%;
+    padding: 20px;
+    border: 1px solid green;
+
+    .inputSt {
+        width: 250px;
+        height: 40px;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid green;
+        border-radius: 10px;
+    }
+} 
+
+.Cbook {
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 110px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 50px;
+    background: none;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+}
+
+.read-toggle {
+    background-color: darkgreen;
+}
+
+#closeBtn {
+    background-color: rgb(60, 60, 60);
+    color: white;
+}
+
+button:active {
+    background-color: darkblue;
+}
+
+#delete_card {
+    background-color: tomato;
+}
+
+#delete_card:active {
+    background-color: darkred;
+}
